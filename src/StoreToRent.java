@@ -1,5 +1,5 @@
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class StoreToRent {
     
     private static final double MAINTENANCE_COST = 1000;
@@ -10,75 +10,57 @@ public class StoreToRent {
     private double totalArea;
     private double sellingPrice;
     private double rent;
-
     private String minimumLeasePeriod;
     private String floorNumber;
     private boolean available;
-
     public String getStoreName() {
         return storeName;
     }
-
     public String getStoreBusiness() {
         return storeBusiness;
     }
-
     public double getTotalArea() {
         return totalArea;
     }
-
     public double getSellingPrice() {
         return sellingPrice;
     }
-
     public double getRent() {
         return rent;
     }
-
     public String getMinimumLeasePeriod() {
         return minimumLeasePeriod;
     }
-
     public String getFloorNumber() {
         return floorNumber;
     }
-
     public boolean isAvailable() {
         return available;
     }
-
     public void setStoreName(String storeName) {
         this.storeName = storeName;
     }
-
     public void setStoreBusiness(String storeBusiness) {
         this.storeBusiness = storeBusiness;
     }
-
     public void setTotalArea(double totalArea) {
         this.totalArea = totalArea;
     }
-
     public void setSellingPrice(double sellingPrice) {
         this.sellingPrice = sellingPrice;
     }
-
     public void setRent(double rent) {
         this.rent = rent;
     }
-
     public void setMinimumLeasePeriod(String minimumLeasePeriod) {
         this.minimumLeasePeriod = minimumLeasePeriod;
     }
-
     public void setFloorNumber(String floorNumber) {
         this.floorNumber = floorNumber;
     }
-
     public void setAvailable(boolean available) {
         this.available = available;
     }
-
     public void enterStoreDetails(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Store Name: ");
@@ -103,7 +85,6 @@ public class StoreToRent {
         input.close();
         
     }
-
     @Override
     public String toString() {
         return "\n" + 
